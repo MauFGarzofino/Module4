@@ -1,0 +1,19 @@
+
+>
+java:S3010	"(Remove this assignment of "currentPage".(À”¼
+K
+java:S2209	"5Change this instance-reference to a static reference.(À”¼
+Q
+java:S2696"6Make the enclosing method "static" or remove this set.(’³Ï·ùÿÿÿÿ
+L
+java:S2696"6Make the enclosing method "static" or remove this set.(œ¬ğ
+Q
+java:S2696"6Make the enclosing method "static" or remove this set.(Ğóšøÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(Îş£šüÿÿÿÿ
+L
+java:S2696!"6Make the enclosing method "static" or remove this set.(Í·ı¥
+E	java:S106$"+Replace this use of System.out by a logger.(†ÌÊÊùÿÿÿÿ
+Q
+java:S2696*"6Make the enclosing method "static" or remove this set.(ù•§ƒıÿÿÿÿ
+@	java:S106-"+Replace this use of System.out by a logger.(öÏëñ
+@	java:S1066"+Replace this use of System.out by a logger.(„‰ÛÂ
