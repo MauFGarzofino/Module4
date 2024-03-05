@@ -27,4 +27,3 @@ public class PaginatedList {
         return (int) Math.ceil((double) items.size() / pageSize);
     }
 }
-
