@@ -20,6 +20,12 @@ public class MemoryAllocator implements IMemoryAllocator
         blocks.add(block);
     }
 
+    // Método para cambiar la estrategia de asignación en tiempo de ejecución
+    @Override
+    public void setAllocationStrategy(IAllocationAlgorithm newAlgorithm) {
+        this.algorithm = newAlgorithm;
+    }
+
     @Override
     public boolean Allocate(String objectName, int size) {
         MemoryBlock block = algorithm.GetMemoryBlock(blocks, size);
@@ -58,6 +64,9 @@ public class MemoryAllocator implements IMemoryAllocator
         }
 
         block.setObject(null);
+
+        // Llama a mergeFreeBlocks después de desasignar para reducir la fragmentación
+        mergeFreeBlocks();
 
         return true;
     }
@@ -100,5 +109,17 @@ public class MemoryAllocator implements IMemoryAllocator
 
         System.out.println("-----------------------");
     }
-    
+
+    private void mergeFreeBlocks() {
+        for (int i = 0; i < blocks.size() - 1; i++) {
+            MemoryBlock current = blocks.get(i);
+            MemoryBlock next = blocks.get(i + 1);
+
+            if (current.IsFree() && next.IsFree()) {
+                current.setSize(current.getSize() + next.getSize());
+                blocks.remove(next);
+                i--;
+            }
+        }
+    }
 }
