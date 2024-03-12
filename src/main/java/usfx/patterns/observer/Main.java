@@ -49,7 +49,7 @@ abstract class ObservadorBase implements IObservador {
 
     protected int calcularSuma(List<Integer> lista) {
         int sumatoria=0;
-        for (int n : numeros.GetListaNumeros())
+        for (int n : lista)
         {
             sumatoria+=n;
         }
@@ -59,7 +59,7 @@ abstract class ObservadorBase implements IObservador {
 
     protected int encontrarMaximo(List<Integer> lista) {
         int mayor = Integer.MIN_VALUE;
-        for (int n : numeros.GetListaNumeros())
+        for (int n : lista)
         {
             if(n>mayor){
                 mayor = n;
@@ -70,7 +70,7 @@ abstract class ObservadorBase implements IObservador {
 
     protected int encontrarMinimo(List<Integer> lista) {
         int menor = Integer.MAX_VALUE;
-        for (int n : numeros.GetListaNumeros())
+        for (int n : lista)
         {
             if(n<menor){
                 menor = n;
@@ -141,8 +141,7 @@ class ObservadorMayor extends ObservadorBase {
         }
     }
 }
-class ObservadorMenor extends ObservadorBase
-{
+class ObservadorMenor extends ObservadorBase {
     public ObservadorMenor(Numeros nums) {
         super(nums);
     }
@@ -151,8 +150,8 @@ class ObservadorMenor extends ObservadorBase
     public void Actualizar() {
         List<Integer> lista = numeros.GetListaNumeros();
         if (!lista.isEmpty()) {
-            int mayor = encontrarMaximo(lista);
-            System.out.println("El mayor es: " + mayor);
+            int menor = encontrarMinimo(lista);
+            System.out.println("El menor es: " + menor);
         }
     }
 }
@@ -180,3 +179,5 @@ class ObservadorImpares extends ObservadorBase {
         System.out.println("Menor número impar: " + menor);
     }
 }
+
+

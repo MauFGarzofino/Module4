@@ -133,6 +133,7 @@ class ObservadorImpares implements IObservador {
     public ObservadorImpares(Numeros nums){
         this.numeros = nums;
     }
+
     @Override
     public void Actualizar() {
         List<Integer> impares = new ArrayList<>();

@@ -83,8 +83,6 @@ Y
 -src/main/java/usfx/sorting/SortDecorator.java,0\c\0c07897f350d173cb67915a036cfb194c4794859
 T
 $src/main/java/usfx/sorting/Main.java,f\4\f4c3b12432bb35b83a94e56e0441dff9f779b284
-W
-'src/main/java/usfx/sorting/Factory.java,6\2\6254eccb85d06ff36aed827b33073a59801ae03c
 Z
 *src/main/java/usfx/dinamycmemory/Main.java,7\f\7fe997255fdc6b250d2641f5fa92662d3d8a5c48
 a
@@ -103,9 +101,9 @@ k
 ;src/main/java/usfx/sorting/ConcreteSortStrategyFactory.java,b\c\bc41ffb48a770ed5142c039decb8c30ac3d6a120
 _
 /src/main/java/usfx/sorting/StrategyBuilder.java,4\0\403c8e8b4483a711f555a19f0aab933e4b8e328c
-L
-src/main/java/usfx/Main.java,c\7\c7b87ebbbd2e7635a3efdbf940128b4960850c76
-Q
-!src/main/java/usfx/Observer1.java,8\9\8973c5e041e65257f8be2e53e1fa529ea86c8709
 X
 (src/main/java/usfx/observador1/Main.java,2\c\2c7fab2afe8fd99233121f0f824113468605b811
+^
+.src/main/java/usfx/patterns/observer/Main.java,d\1\d1df1833ae2bea201cccbd1884b96bd7decde606
+d
+4src/main/java/usfx/patterns/observer/main2/Main.java,7\5\75adcfc57dd1266f351a1407c377a7294b81c8c8
