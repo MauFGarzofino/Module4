@@ -1,8 +1,7 @@
-package usfx;
+package usfx.patterns.observer;
 import java.util.List;
 import java.util.ArrayList;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,12 +12,15 @@ public class Main {
         n.Attach(mayor);
         ObservadorMenor menor = new ObservadorMenor(n);
         n.Attach(menor);
+        ObservadorImpares impares = new ObservadorImpares(n);
+        n.Attach(impares);
 
         n.Adicionar(10);
         n.Adicionar(20);
         n.Adicionar(60);
         n.Adicionar(28);
         n.Adicionar(69);
+        n.Adicionar(3);
     }
 }
 
@@ -123,5 +125,48 @@ class ObservadorMenor implements IObservador
         }
 
         System.out.println("El menor es "+ menor);
+    }
+}
+class ObservadorImpares implements IObservador {
+    private Numeros numeros;
+
+    public ObservadorImpares(Numeros nums){
+        this.numeros = nums;
+    }
+    @Override
+    public void Actualizar() {
+        List<Integer> impares = new ArrayList<>();
+
+        for(Integer num : numeros.GetListaNumeros()) {
+            if(num % 2 != 0){
+                impares.add(num);
+            }
+        }
+
+        if(impares.isEmpty()){
+            System.out.println("No hay números impares");
+            return;
+        }
+
+        int mayor = Integer.MIN_VALUE;
+        int menor = Integer.MAX_VALUE;
+
+        for (int n : impares) {
+            if (n > mayor) {
+                mayor = n;
+            }
+            if (n < menor) {
+                menor = n;
+            }
+        }
+
+        int suma = 0;
+        for (Integer num : impares) {
+            suma += num;
+        }
+
+        System.out.println("Suma de impares: " + suma);
+        System.out.println("Mayor número impar: " + mayor);
+        System.out.println("Menor número impar: " + menor);
     }
 }
