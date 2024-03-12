@@ -1,0 +1,20 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘
+@	java:S106"+Replace this use of System.out by a logger.(Ù™Èù
+E	java:S106"+Replace this use of System.out by a logger.(¹ÁÎÌıÿÿÿÿ
+@	java:S106."+Replace this use of System.out by a logger.(ª­¶
+E	java:S1067"+Replace this use of System.out by a logger.(ù¯Â”úÿÿÿÿ
+E	java:S106;"+Replace this use of System.out by a logger.(™¨Šüÿÿÿÿ
+E	java:S106A"+Replace this use of System.out by a logger.(Å¤Ñ ıÿÿÿÿ
+E	java:S106U"+Replace this use of System.out by a logger.(ÚàÜ÷ûÿÿÿÿ
+E	java:S106V"+Replace this use of System.out by a logger.(ã¼»Ìøÿÿÿÿ
+@	java:S106W"+Replace this use of System.out by a logger.(ïÄÉã
+E	java:S106X"+Replace this use of System.out by a logger.(”«ÀÈüÿÿÿÿ
+E	java:S106Y"+Replace this use of System.out by a logger.(²¸§ôøÿÿÿÿ
+E	java:S106Z"+Replace this use of System.out by a logger.(àã›ªøÿÿÿÿ
+@	java:S106["+Replace this use of System.out by a logger.(å€˜å
+@	java:S106\"+Replace this use of System.out by a logger.(«„Öí
+E	java:S106]"+Replace this use of System.out by a logger.(®Õ·ıÿÿÿÿ
+@	java:S106^"+Replace this use of System.out by a logger.(¤ÿ¦¥
+@	java:S106_"+Replace this use of System.out by a logger.(¡äé”

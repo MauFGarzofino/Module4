@@ -1,0 +1,22 @@
+
+t
+java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿŞÑıÿÿÿÿ
+u
+java:S2293æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜İàÚûÿÿÿÿ
+n	java:S127¤"XRefactor the code in order to not assign to this loop counter from within the loop body.(‘´ä
+Q	java:S125"<This block of commented-out lines of code should be removed.(³Í½ñ
+Q	java:S125"<This block of commented-out lines of code should be removed.(â°İ°
+V	java:S125"<This block of commented-out lines of code should be removed.(ƒµ±ìúÿÿÿÿ
+b	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÃ³P
+c	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô»õè
+o	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÍ·ÿüÿÿÿÿ8ë¤ŒÚá1
+j	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÛÀı8ë¤ŒÚá1
+h	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–èµêùÿÿÿÿ
+h	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢”ßŞøÿÿÿÿ
+h	java:S100M"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰–­¶ıÿÿÿÿ
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øöşÊûÿÿÿÿ
+i	java:S100—"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰šÀ¹ÿÿÿÿÿ
+Q
+java:S1118ã":Add a private constructor to hide the implicit public one.(¯ÃÎÑ
+C
+java:S1068U"-Remove this unused "totalSize" private field.(õ™·è
