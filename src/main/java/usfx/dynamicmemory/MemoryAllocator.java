@@ -20,7 +20,6 @@ public class MemoryAllocator implements IMemoryAllocator
         blocks.add(block);
     }
 
-    // Método para cambiar la estrategia de asignación en tiempo de ejecución
     @Override
     public void setAllocationStrategy(IAllocationAlgorithm newAlgorithm) {
         this.algorithm = newAlgorithm;
@@ -65,7 +64,6 @@ public class MemoryAllocator implements IMemoryAllocator
 
         block.setObject(null);
 
-        // Llama a mergeFreeBlocks después de desasignar para reducir la fragmentación
         mergeFreeBlocks();
 
         return true;

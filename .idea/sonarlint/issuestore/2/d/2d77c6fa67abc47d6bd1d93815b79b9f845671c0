@@ -1,0 +1,14 @@
+
+F
+java:S1604»"(Make this anonymous inner class a lambda(ф«§І8ґ¤вРг1
+8
+java:S1700h"Rename field "numeros"(чђћщъяяяя8ґ¤вРг1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ћёРШ8В¤вРг1
+[
+java:S59936"9Change the visibility of this constructor to "protected".(¬йкзьяяяя8Е¤вРг1
+o
+java:S4276:"RRefactor this code to use the more specialised Functional Interface 'IntPredicate'(Є”џ›8Ж¤вРг1
+j	java:S100q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(й§®Ѕ8И¤вРг1
+o	java:S100v"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»лЏшюяяяя8И¤вРг1
+j	java:S100~"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(щѕЃО8И¤вРг1
+k	java:S100…"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ЃйяЮ8И¤вРг1

@@ -1,12 +1,0 @@
-
-8
-java:S1700U"Rename field "numeros"(÷ùúÿÿÿÿ8™Î”¢ã1
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ĞØ8¦Î”¢ã1
-[
-java:S5993#"9Change the visibility of this constructor to "protected".(¬éêçüÿÿÿÿ8§Î”¢ã1
-o
-java:S4276'"RRefactor this code to use the more specialised Functional Interface 'IntPredicate'(ª”Ÿ›8¨Î”¢ã1
-j	java:S100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é§®½8«Î”¢ã1
-o	java:S100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ëøşÿÿÿÿ8­Î”¢ã1
-j	java:S100j"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¾Î8­Î”¢ã1
-j	java:S100q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÿŞ8®Î”¢ã1
