@@ -135,3 +135,7 @@ M
 src/main/java/Ascii/Main.java,9\7\97dd92049bce036d2d41c9836cda4ce0b14b4cf2
 M
 src/main/java/ascii/Main.java,6\5\65d01f19b31b2d65947a85c9c77356910e1ab4a2
+[
++src/main/java/ascii/example - Ivan2 (1).txt,c\8\c8c490b64a82c6235bcec1af77d1b0f7416782ca
+T
+$src/main/java/ascii/Main2Prueba.java,6\0\603c49b0ff81840a3dfede4fa1799f325ca62152
