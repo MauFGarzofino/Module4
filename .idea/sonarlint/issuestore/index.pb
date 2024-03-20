@@ -287,3 +287,5 @@ n
 >src/main/java/assignments/dynamicmemory/WorstFitAlgorithm.java,0\e\0e360f080f44205598529b5bcfec36e9674c49e4
 i
 9src/main/java/draft/drones_service/DeliveryOptimizer.java,5\f\5fee0aab695c99da242099dd460257e69531aab5
+w
+Gsrc/main/java/assignments/squareframes/examples/example - Ivan2 (1).txt,1\4\1465d31a458bed27f0ba81706f956e8f756dfbac

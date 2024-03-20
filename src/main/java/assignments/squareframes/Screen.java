@@ -28,25 +28,28 @@ public class Screen {
     }
 
     public void markFrame(int row, int col, int len) {
-        // Marcar los bordes horizontales
-        for (int i = 0; i < len; i++) {
-            setCharAt(col + i, row, '*');
-            setCharAt(col + i, row + len - 1, '*');
+        char cornerType = content[row][col];
+
+        int startRow = row, startCol = col;
+        if (cornerType == Constants.DER_ARRIBA) {
+            //len = 3;
+            startCol = col - len + 1;
+        } else if (cornerType == Constants.IZQ_ABAJO) {
+            startRow = row - len + 1;
+        } else if (cornerType == Constants.DER_ABAJO) {
+            startRow = row - len + 1;
+            startCol = col - len + 1;
         }
 
-        // Marcar los bordes verticales
+        // Marcar los bordes horizontales y verticales desde las coordenadas de inicio calculadas.
         for (int i = 0; i < len; i++) {
-            setCharAt(col, row + i, '*');
-            setCharAt(col + len - 1, row + i, '*');
+            setCharAt(startCol + i, startRow, '*'); // Top edge
+            setCharAt(startCol + i, startRow + len - 1, '*'); // Bottom edge
+            setCharAt(startCol, startRow + i, '*'); // Left edge
+            setCharAt(startCol + len - 1, startRow + i, '*'); // Right edge
         }
 
         printContent();
-    }
-
-    private void setCharAtIfNotMarked(int x, int y, char c) {
-        if (content[y][x] != '*') {
-            content[y][x] = c;
-        }
     }
 
     private void printContent() {

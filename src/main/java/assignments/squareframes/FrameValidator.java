@@ -1,50 +1,62 @@
 package assignments.squareframes;
 
+import static assignments.squareframes.Constants.*;
+
 public class FrameValidator {
     public static boolean isValidFrame(char[][] screen, int row, int col, int len) {
-        // Verificar esquinas
-        char topLeft = screen[row][col];
-        char topRight = screen[row][col + len - 1];
-        char bottomLeft = screen[row + len - 1][col];
-        char bottomRight = screen[row + len - 1][col + len - 1];
+        char corner = screen[row][col];
+        boolean hasValidEdges = false;
 
-        if (!isCornerValid(topLeft) || !isCornerValid(topRight) ||
-                !isCornerValid(bottomLeft) || !isCornerValid(bottomRight)) {
-            return false;
-        }
-
-        // Verificar bordes
-        for (int i = 1; i < len - 1; i++) {
-            char top = screen[row][col + i];
-            char bottom = screen[row + len - 1][col + i];
-            char left = screen[row + i][col];
-            char right = screen[row + i][col + len - 1];
-
-            if (!(isHorizontal(top) || top == '*') ||
-                    !(isHorizontal(bottom) || bottom == '*') ||
-                    !(isVertical(left) || left == '*') ||
-                    !(isVertical(right) || right == '*')) {
-                return false;
+        // Identificar el tipo de esquina y verificar bordes basándose en esa esquina.
+        if (isCorner(corner)) {
+            // Esquina superior izquierda
+            if (corner == Constants.IZQ_ARRIBA) {
+                hasValidEdges = checkHorizontalEdge(screen, row, col, len, true) &&
+                        checkVerticalEdge(screen, row, col, len, true);
+            }
+            // Esquina superior derecha
+            else if (corner == Constants.DER_ARRIBA) {
+                hasValidEdges = checkHorizontalEdge(screen, row, col - len + 1, len, false) &&
+                        checkVerticalEdge(screen, row, col, len, true);
+            }
+            // Esquina inferior izquierda
+            else if (corner == Constants.IZQ_ABAJO) {
+                hasValidEdges = checkHorizontalEdge(screen, row, col, len, true) &&
+                        checkVerticalEdge(screen, row - len + 1, col, len, false);
+            }
+            // Esquina inferior derecha
+            else if (corner == Constants.DER_ABAJO) {
+                hasValidEdges = checkHorizontalEdge(screen, row, col - len + 1, len, false) &&
+                        checkVerticalEdge(screen, row - len + 1, col, len, false);
             }
         }
 
+        return hasValidEdges;
+    }
+
+    private static boolean checkHorizontalEdge(char[][] screen, int row, int col, int len, boolean right) {
+        for (int x = 1; x < len - 1; x++) {
+            int columnIndex = right ? col + x : col - x;
+            if (!isHorizontal(screen[row][columnIndex]) && screen[row][columnIndex] != '*') {
+                return false;
+            }
+        }
         return true;
     }
 
-    private static boolean isCornerValid(char c) {
-        return c == Constants.IZQ_ARRIBA || c == Constants.DER_ARRIBA ||
-                c == Constants.IZQ_ABAJO || c == Constants.DER_ABAJO || c == '*';
-    }
-
-    private static boolean isHorizontal(char c) {
-        return c == Constants.HORIZONTAL || c == '*';
-    }
-
-    private static boolean isVertical(char c) {
-        return c == Constants.VERTICAL || c == '*';
+    private static boolean checkVerticalEdge(char[][] screen, int row, int col, int len, boolean down) {
+        int rowIndex = down ? row + 1 : row - 1;
+        if (!isVertical(screen[rowIndex][col]) || screen[rowIndex + 1][col] == DER_ABAJO ) {
+            return false;
+        }
+//        for (int y = 1; y < len - 1; y++) {
+//            int rowIndex = down ? row + y : row - y;
+//            if (!isVertical(screen[rowIndex][col]) || screen[rowIndex + 1][col] == DER_ABAJO ) {
+//                return false;
+//            }
+//        }
+        return true;
     }
 }
-
-
 
 

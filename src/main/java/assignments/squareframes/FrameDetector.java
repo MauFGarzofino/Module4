@@ -20,7 +20,7 @@ public class FrameDetector {
                         if (FrameValidator.isValidFrame(screen.getContent(), row, col, len)) {
                             frames.add(new Frame(row, col, len));
                             screen.markFrame(row, col, len);
-                            break; // Para simular el comportamiento del 'goto', detenemos la búsqueda una vez que encontramos un marco válido.
+                            break;
                         }
                     }
                 }
