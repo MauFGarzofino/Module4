@@ -1,9 +1,12 @@
 
+h
+java:S1301v"KReplace this "switch" statement by "if" statements to increase readability.(Âôò©8œÁªå1
 n
-java:S2095F"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(æù§…ıÿÿÿÿ8ç¨è™å1
+java:S2095G"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(æù§…ıÿÿÿÿ8Âü™å1
 b
-java:S1659"@Declare "col" and all following declarations on a separate line.(â’›ƒüÿÿÿÿ8ê¨è™å1
-U
-java:S1659v"3Declare "validHorizontalBottom" on a separate line.(Ã‡ÖÔûÿÿÿÿ8ñ¨è™å1
-M
-java:S1659w"0Declare "validVerticalRight" on a separate line.(ªİ™·8ñ¨è™å1
+java:S1659"@Declare "col" and all following declarations on a separate line.(â’›ƒüÿÿÿÿ8Çü™å1
+t
+java:S3776n"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(–™¢÷ûÿÿÿÿ8¯Âªå1
+e
+java:S1659s"HDeclare "validBottom" and all following declarations on a separate line.(Ğ£»Ø8°Âªå1
+>	java:S131v""Add a default case to this switch.(Âôò©8µÂªå1

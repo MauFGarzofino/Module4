@@ -3,3 +3,7 @@ n
 java:S20958"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(æù§…ıÿÿÿÿ8†Äÿ–å1
 b
 java:S1659"@Declare "col" and all following declarations on a separate line.(â’›ƒüÿÿÿÿ8›Äÿ–å1
+t
+java:S3776V"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ü…ß£úÿÿÿÿ8æÏ«Ÿå1
+l
+java:S1659X"JDeclare "isBottomValid" and all following declarations on a separate line.(¶¯®şÿÿÿÿ8çÏ«Ÿå1

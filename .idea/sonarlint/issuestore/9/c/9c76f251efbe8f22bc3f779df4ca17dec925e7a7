@@ -1,0 +1,14 @@
+
+n
+java:S2095H"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(æù§…ıÿÿÿÿ8Ò å1
+b
+java:S1659"@Declare "col" and all following declarations on a separate line.(â’›ƒüÿÿÿÿ8’Ò å1
+e
+java:S1659y"HDeclare "validBottom" and all following declarations on a separate line.(Ğ£»Ø8½â å1
+?	java:S131„""Add a default case to this switch.(Âôò©8½â å1
+p
+java:S3776š"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ñ”¦Ø8©²ã å1
+b
+java:S3358œ"DExtract this nested ternary operation into an independent statement.(û§†í8©²ã å1
+g
+java:S3358"DExtract this nested ternary operation into an independent statement.(Ç®‡şüÿÿÿÿ8©²ã å1

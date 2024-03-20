@@ -1,10 +1,10 @@
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import usfx.dynamicmemory.BestFitAlgorithm;
-import usfx.dynamicmemory.FirstFitAlgorithm;
-import usfx.dynamicmemory.IMemoryAllocator;
-import usfx.dynamicmemory.MemoryAllocator;
+import assignments.dynamicmemory.BestFitAlgorithm;
+import assignments.dynamicmemory.FirstFitAlgorithm;
+import assignments.dynamicmemory.IMemoryAllocator;
+import assignments.dynamicmemory.MemoryAllocator;
 
 public class MemoryAllocatorTest {
     @Test
