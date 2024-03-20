@@ -22,8 +22,6 @@ public class MainRestaurant {
         IEjecutorComandos ejecutorComandos = FabricaEjecutorComandos.crearEjecutorConComandos(menu, order);
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to the Restaurant Management System!");
-
         String comando;
         while (true) {
             printCommandMenu();
@@ -63,6 +61,6 @@ public class MainRestaurant {
         System.out.println("5. Ver Orden (showOrder)");
         System.out.println("6. Remover Item de la Orden (removeItem)");
         System.out.println("7. Salir (exit)");
-        System.out.print("Seleccione una opción: ");
+        System.out.print(" Seleccione una opción: ");
     }
 }
