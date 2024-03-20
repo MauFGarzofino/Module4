@@ -289,3 +289,5 @@ i
 9src/main/java/draft/drones_service/DeliveryOptimizer.java,5\f\5fee0aab695c99da242099dd460257e69531aab5
 w
 Gsrc/main/java/assignments/squareframes/examples/example - Ivan2 (1).txt,1\4\1465d31a458bed27f0ba81706f956e8f756dfbac
+s
+Csrc/main/java/assignments/squareframes/examples/example - Ivan3.txt,4\8\48793463f06e9fed81a932785a5a7f75ce024334

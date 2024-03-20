@@ -45,16 +45,12 @@ public class FrameValidator {
     }
 
     private static boolean checkVerticalEdge(char[][] screen, int row, int col, int len, boolean down) {
-        int rowIndex = down ? row + 1 : row - 1;
-        if (!isVertical(screen[rowIndex][col]) || screen[rowIndex + 1][col] == DER_ABAJO ) {
-            return false;
+        for (int y = 1; y < len - 1; y++) {
+            int rowIndex = down ? row + y : row - y;
+            if (!isVertical(screen[rowIndex][col]) || screen[rowIndex + 1][col] == DER_ABAJO ) {
+                return false;
+            }
         }
-//        for (int y = 1; y < len - 1; y++) {
-//            int rowIndex = down ? row + y : row - y;
-//            if (!isVertical(screen[rowIndex][col]) || screen[rowIndex + 1][col] == DER_ABAJO ) {
-//                return false;
-//            }
-//        }
         return true;
     }
 }
