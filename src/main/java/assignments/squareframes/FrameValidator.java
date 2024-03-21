@@ -16,7 +16,7 @@ public class FrameValidator {
             }
             // Esquina superior derecha
             else if (corner == Constants.DER_ARRIBA) {
-                hasValidEdges = checkHorizontalEdge(screen, row, col - len + 1, len, false) &&
+                hasValidEdges = checkHorizontalEdge(screen, row, col, len, false) &&
                         checkVerticalEdge(screen, row, col, len, true);
             }
             // Esquina inferior izquierda
@@ -45,12 +45,27 @@ public class FrameValidator {
     }
 
     private static boolean checkVerticalEdge(char[][] screen, int row, int col, int len, boolean down) {
-        for (int y = 1; y < len - 1; y++) {
-            int rowIndex = down ? row + y : row - y;
-            if (!isVertical(screen[rowIndex][col]) || screen[rowIndex + 1][col] == DER_ABAJO ) {
-                return false;
+        char corner = screen[row][col];
+
+        if (corner == Constants.IZQ_ARRIBA) {
+            for (int y = 1; y <= len - 1; y++) {
+                int rowIndex = down ? row + y : row - y;
+
+                if (!isVertical(screen[rowIndex][col]) && screen[rowIndex][col] != IZQ_ABAJO ) {
+                    return false;
+                }
             }
         }
+
+        if (corner == DER_ARRIBA){
+            for (int y = 1; y <= len - 1; y++) {
+                int rowIndex = down ? row + y : row - y;
+                if (!isVertical(screen[rowIndex][col]) && screen[rowIndex + 1][col] == DER_ABAJO ) {
+                    return false;
+                }
+            }
+        }
+
         return true;
     }
 }
