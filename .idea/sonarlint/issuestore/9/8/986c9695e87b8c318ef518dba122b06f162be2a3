@@ -1,32 +1,0 @@
-
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¯Àûÿÿÿÿ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ùÇ·
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡óå¶
-k	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º€äëÿÿÿÿÿ
-k	java:S117
-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÕ’ëıÿÿÿÿ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œš¬¯
-K
-java:S1854"5Remove this useless assignment to local variable "H".(œš¬¯
-P
-java:S1854
-"5Remove this useless assignment to local variable "V".(ûÕ’ëıÿÿÿÿ
-Q
-java:S1854	"6Remove this useless assignment to local variable "RB".(º€äëÿÿÿÿÿ
-L
-java:S1854"6Remove this useless assignment to local variable "LB".(‡óå¶
-L
-java:S1854"6Remove this useless assignment to local variable "RU".(¹ùÇ·
-=
-java:S1481"'Remove this unused "RU" local variable.(¹ùÇ·
-=
-java:S1481"'Remove this unused "LB" local variable.(‡óå¶
-B
-java:S1481	"'Remove this unused "RB" local variable.(º€äëÿÿÿÿÿ
-A
-java:S1481
-"&Remove this unused "V" local variable.(ûÕ’ëıÿÿÿÿ
-<
-java:S1481"&Remove this unused "H" local variable.(œš¬¯
-M
-java:S6126"2Replace this String concatenation with Text block.(‹è¤ôúÿÿÿÿ

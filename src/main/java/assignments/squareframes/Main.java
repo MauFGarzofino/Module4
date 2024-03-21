@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-            String filePath = "src/main/java/assignments/squareframes/examples/example - Ivan3.txt";
+            String filePath = "src/main/java/assignments/squareframes/examples/example - Ivan.txt";
             char[][] content = ScreenReader.readScreenFromFile(filePath);
             Screen screen = new Screen(content);
             FrameDetector detector = new FrameDetector(screen);

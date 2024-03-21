@@ -1,5 +1,0 @@
-
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿŞÑıÿÿÿÿ
-s	java:S127w"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK8”ëĞ®á1
-h	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øöşÊûÿÿÿÿ
