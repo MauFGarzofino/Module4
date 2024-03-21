@@ -22,7 +22,6 @@ public class IntervalManager {
         // Paso 3: Sumar las longitudes de los intervalos combinados
         int totalLength = IntervalLengthSummarizer.sumLengthsOfIntervals(combinedIntervals);
 
-        // Imprimir los intervalos combinados y la suma total de sus longitudes
         System.out.println("Intervalos combinados:");
         for (Interval interval : combinedIntervals) {
             System.out.println("[" + interval.getStart() + ", " + interval.getEnd() + "]");

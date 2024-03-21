@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Test;
-import test.VerificadorPrimo;
+import assignments.verificadorprimo.VerificadorPrimo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
