@@ -17,7 +17,7 @@ class VerificadorPrimoTests {
         assertFalse(verificador.esPrimo(0), "0 no debería ser primo");
     }
     @Test
-    void testPrimosPequeños() {
+    void testPrimosPequenos() {
         VerificadorPrimo verificador = new VerificadorPrimo();
         assertTrue(verificador.esPrimo(5), "El 5 debería ser primo");
     }

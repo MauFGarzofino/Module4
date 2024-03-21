@@ -23,6 +23,7 @@ public class StonePile {
         // 2. No incluir la piedra en el primer montón (iría al segundo montón)
         // Y elige la que minimice la diferencia de peso
 
+        System.out.println("Sum Cal" + sumCalculated);
         return Math.min(findMinDiff(weights, n - 1, sumCalculated + weights[n - 1], totalSum),
                 findMinDiff(weights, n - 1, sumCalculated, totalSum));
     }
